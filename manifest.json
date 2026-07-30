@@ -1,0 +1,42 @@
+{
+    "short_name": "My Baby",
+    "name": "An app for my girfriend",
+    "icons": [
+        {
+            "src": "images/mainIcon144-2.jpg",
+            "type": "image/jpg",
+            "sizes": "144x144"
+        },
+        {
+            "src": "images/mainIcon192-2.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/mainIcon512-2.jpg",
+            "type": "image/jpg",
+            "sizes": "512x512"
+        }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "./index.html",
+    "scope": "./",
+    "background_color": "#3367D6",
+    "display": "fullscreen",
+    "theme_color": "#FFFFFF",
+    "description": "An app for my girlfriend",
+    "screenshots": [
+        {
+            "src": "./images/screenshot1.png",
+            "type": "image/png",
+            "sizes": "401x822",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "./images/screenshot1.png",
+            "type": "image/png",
+            "sizes": "720x347",
+            "form_factor": "wide"
+        }
+    ]
+}

@@ -7,7 +7,8 @@ const petnames = [
     "babe",
 ];
 
-const dayNumber = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+const now = new Date();
+const dayNumber = Math.floor(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / (1000 * 60 * 60 * 24));
 const index = dayNumber % petnames.length;
 const petname = petnames[index];
 
