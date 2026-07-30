@@ -1,6 +1,7 @@
 const welcomeBanner = document.getElementById('welcomeBanner');
 const imageEl = document.getElementById('image');
 const weather = document.getElementById('weather');
+const refresh = document.getElementById('refresh');
 
 const petnames = [
     "baby",
@@ -74,3 +75,7 @@ async function getWeather() {
 }
 
 getWeather();
+
+refresh.addEventListener('click', () => {
+    window.location.refresh;
+})
