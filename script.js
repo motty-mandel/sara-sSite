@@ -21,7 +21,18 @@ const imageSources = [
     "images/saraAndIBeach.jpeg",
     "images/saraAndIMoving.jpeg",
     "images/saraAndIPark.jpeg",
-    "images/saraAndISunset.jpeg"
+    "images/saraAndISunset.jpeg",
+    "images/20260724_190620.jpg",
+    "images/20260724_190614.jpg",
+    "images/20260721_180000.jpg",
+    "images/20260706_225806.jpg",
+    "images/20260702_223538.jpg",
+    "images/20260702_223515.jpg",
+    "images/20260628_155609.jpg",
+    "images/20260628_155321.jpg",
+    "images/20260628_150043.jpg",
+    "images/20260621_203749.jpg",
+    "images/20260607_195005.jpg"
 ];
 
 const imageIndex = dayNumber % imageSources.length;
