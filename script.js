@@ -68,7 +68,7 @@ async function getWeather() {
              `;
         } else {
             welcomeBanner.innerHTML = `
-                <h1>No data</h1>
+                <h1>Good day ${petname}</h1>
             `
         }
 
