@@ -40,7 +40,7 @@ const imageIndex = dayNumber % imageSources.length;
 const image = imageSources[imageIndex];
 
 imageEl.innerHTML = `
-    <img src="./${image}" alt="pic-of-us" height="auto" width="100%">
+    <img src="./${image}" alt="pic-of-us" height="auto" width="100%" loading="lazy">
 `
 
 async function getWeather() {
@@ -62,10 +62,14 @@ async function getWeather() {
             welcomeBanner.innerHTML = `
                  <h1>Good morning ${petname}!</h1>
              `;
-        } else {
+        } else if (data.current.is_day === 0) {
              welcomeBanner.innerHTML = `
                  <h1>Good night ${petname}!</h1>
              `;
+        } else {
+            welcomeBanner.innerHTML = `
+                <h1>No data</h1>
+            `
         }
 
 
@@ -77,5 +81,5 @@ async function getWeather() {
 getWeather();
 
 refresh.addEventListener('click', () => {
-    window.location.refresh;
+    window.location.reload();
 })
