@@ -56,14 +56,14 @@ async function getWeather() {
 
         currentTemp = Math.trunc(data.current.temperature_2m);
         weather.innerHTML = `
-        <h2>The weather today is <br/> ${currentTemp} degrees celsius!</h2>
+        <h3>The weather today is <br/> ${currentTemp} degrees celsius!</h3>
     `
         if (data.current.is_day === 1) {
             welcomeBanner.innerHTML = `
                  <h1>Good morning ${petname}!</h1>
              `;
         } else if (data.current.is_day === 0) {
-             welcomeBanner.innerHTML = `
+            welcomeBanner.innerHTML = `
                  <h1>Good night ${petname}!</h1>
              `;
         } else {
@@ -83,3 +83,34 @@ getWeather();
 refresh.addEventListener('click', () => {
     window.location.reload();
 })
+
+// ------------------------------------------------------------
+const jokeEl = document.getElementById('joke');
+
+async function getJoke() {
+    try {
+        const apiKey = 'l7m0vyJzQT5W6izPZNwwAvOucbmiq88UvX8wRBGB';
+        const response = await fetch("https://api.api-ninjas.com/v1/dadjokes", {
+            headers: {
+                'X-Api-Key': apiKey
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(data[0].joke);
+
+        const joke = data[0].joke;
+
+        jokeEl.innerHTML = `
+            <h3>${joke}</h3>
+        `
+    } catch (error) {
+        console.error('Fetch operation failed:', error);
+    }
+}
+
+getJoke()
