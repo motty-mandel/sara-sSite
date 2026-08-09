@@ -3,10 +3,16 @@ const imageEl = document.getElementById('image');
 const weather = document.getElementById('weather');
 const refresh = document.getElementById('refresh');
 
+refresh.addEventListener('click', () => {
+    window.location.reload();
+});
+
 const petnames = [
     "baby",
     "dear",
     "babe",
+    "my love",
+    "love"
 ];
 
 const now = new Date();
@@ -41,7 +47,7 @@ const image = imageSources[imageIndex];
 
 imageEl.innerHTML = `
     <img src="./${image}" alt="pic-of-us" height="auto" width="100%" loading="lazy">
-`
+`;
 
 async function getWeather() {
     try {
@@ -57,7 +63,8 @@ async function getWeather() {
         currentTemp = Math.trunc(data.current.temperature_2m);
         weather.innerHTML = `
         <h3>The weather today is <br/> ${currentTemp} degrees celsius!</h3>
-    `
+    `;
+    
         if (data.current.is_day === 1) {
             welcomeBanner.innerHTML = `
                  <h1>Good morning ${petname}!</h1>
@@ -76,13 +83,9 @@ async function getWeather() {
     } catch (error) {
         console.error('Fetch operation failed:', error);
     }
-}
+};
 
 getWeather();
-
-refresh.addEventListener('click', () => {
-    window.location.reload();
-})
 
 // ------------------------------------------------------------
 const jokeEl = document.getElementById('joke');
@@ -101,16 +104,46 @@ async function getJoke() {
         }
 
         const data = await response.json();
-        console.log(data[0].joke);
-
         const joke = data[0].joke;
 
         jokeEl.innerHTML = `
             <h3>${joke}</h3>
-        `
+        `;
     } catch (error) {
         console.error('Fetch operation failed:', error);
     }
-}
+};
 
-getJoke()
+// getJoke();
+
+// ------------------------------------------------------------
+const timeZone = document.getElementById('timezone');
+
+const gibraltarTime = now.toLocaleTimeString("en-US", {
+  timeZone: 'Europe/Gibraltar',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false
+});
+
+const newYorkTime = now.toLocaleTimeString("en-US", {
+  timeZone: 'America/New_York',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false
+});
+
+const londonTime = now.toLocaleTimeString("en-US", {
+  timeZone: 'Europe/London',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false
+});
+
+timeZone.innerHTML = `
+    <h3>
+        GIB: ${gibraltarTime} <br/>
+        NY: ${newYorkTime} <br/>
+        UK: ${londonTime}
+    </h3>
+`;

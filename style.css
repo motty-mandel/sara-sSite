@@ -1,6 +1,13 @@
+.edu-nsw-act-cursive-saraCursive {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background-color: rgb(238, 189, 222);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Edu NSW ACT Cursive", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .welcome-banner {
@@ -14,7 +21,7 @@ body {
 .welcome-banner h1 {
     font-size: 2rem;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0 0 3px 0;
     text-align: center;
 }
 
@@ -33,22 +40,21 @@ body {
     background-color: rgb(242, 244, 210);
     border-radius: 10px;
     padding: 5px;
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
     text-align: center;
-    width: 50%;
 }
 
 .joke {
     background-color: rgb(242, 244, 210);
     border-radius: 10px;
     padding: 5px;
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
     text-align: center;
-    width: 50%;
 }
 
-.widget {
-    display: inline-flex;
+.widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .refresh {
@@ -62,4 +68,21 @@ body {
     border: none;
     border-radius: 10px;
     background-color: rgb(244, 156, 156);
+    color: black;
+}
+
+.currency {
+    background-color: rgb(242, 244, 210);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 10px 0;
+    text-align: center;
+}
+
+.timezone {
+    background-color: rgb(242, 244, 210);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 10px 0;
+    text-align: center;
 }
