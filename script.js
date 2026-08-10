@@ -114,7 +114,7 @@ async function getJoke() {
     }
 };
 
-// getJoke();
+getJoke();
 
 // ------------------------------------------------------------
 const timeZone = document.getElementById('timezone');
