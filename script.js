@@ -64,24 +64,27 @@ async function getWeather() {
         weather.innerHTML = `
         <h3>The weather today is <br/> ${currentTemp} degrees celsius!</h3>
     `;
-    
+
         if (data.current.is_day === 1) {
             welcomeBanner.innerHTML = `
                  <h1>Good morning ${petname}!</h1>
              `;
-        } else if (data.current.is_day === 0) {
+        } else {
             welcomeBanner.innerHTML = `
                  <h1>Good night ${petname}!</h1>
              `;
-        } else {
-            welcomeBanner.innerHTML = `
-                <h1>Good day ${petname}</h1>
-            `
         }
 
 
     } catch (error) {
         console.error('Fetch operation failed:', error);
+        welcomeBanner.innerHTML = `
+            <h1>Good day ${petname}!</h1>
+        `;
+        weather.innerHTML = `
+            <h3>You're gonna have to estimate the weather based off of feel this time!</h3>
+        `
+
     }
 };
 
@@ -111,33 +114,36 @@ async function getJoke() {
         `;
     } catch (error) {
         console.error('Fetch operation failed:', error);
+        jokeEl.innerHTML = `
+            <h3>You are not connected to the internet babe! The bottom two are hard coded in, that's why they work.</h3>
+        `
     }
 };
 
-// getJoke();
+getJoke();
 
 // ------------------------------------------------------------
 const timeZone = document.getElementById('timezone');
 
 const gibraltarTime = now.toLocaleTimeString("en-US", {
-  timeZone: 'Europe/Gibraltar',
-  hour: '2-digit',
-  minute: '2-digit',
-  hour12: false
+    timeZone: 'Europe/Gibraltar',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
 });
 
 const newYorkTime = now.toLocaleTimeString("en-US", {
-  timeZone: 'America/New_York',
-  hour: '2-digit',
-  minute: '2-digit',
-  hour12: false
+    timeZone: 'America/New_York',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
 });
 
 const londonTime = now.toLocaleTimeString("en-US", {
-  timeZone: 'Europe/London',
-  hour: '2-digit',
-  minute: '2-digit',
-  hour12: false
+    timeZone: 'Europe/London',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
 });
 
 timeZone.innerHTML = `
