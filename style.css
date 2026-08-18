@@ -1,13 +1,14 @@
-.edu-nsw-act-cursive-saraCursive {
-  font-family: "Edu NSW ACT Cursive", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+/* .edu-nsw-act-cursive-saraCursive {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
 
 body {
-    background-color: rgb(238, 189, 222);
-    font-family: "Edu NSW ACT Cursive", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("./escheresque.png");
+    background-color: #00238c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .welcome-banner {
@@ -36,12 +37,21 @@ body {
     border-radius: 10px;
 }
 
+.widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0, 0.7);
+}
+
 .weather {
     background-color: rgb(242, 244, 210);
     border-radius: 10px;
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
+    background: url("./45-degree-fabric-light.png");
+    background-color: #00238c;
 }
 
 .joke {
@@ -50,12 +60,36 @@ body {
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
+    background: url("./45-degree-fabric-light.png");
+    background-color: #00238c;
 }
 
-.widgets {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.currency {
+    background-color: rgb(242, 244, 210);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 10px 0;
+    text-align: center;
+    background: url("./45-degree-fabric-light.png");
+    background-color: #00238c;
+}
+
+.timezone {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 10px 0;
+    text-align: center;
+    background: url("./45-degree-fabric-light.png");
+    background-color: #00238c;
+}
+
+.goal-header {
     margin-bottom: 100px;
+    width: 100%;
+    background-color: aliceblue;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    text-align: center;
 }
 
 .refresh {
@@ -70,20 +104,4 @@ body {
     border-radius: 10px;
     background-color: rgb(244, 156, 156);
     color: black;
-}
-
-.currency {
-    background-color: rgb(242, 244, 210);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 10px 0;
-    text-align: center;
-}
-
-.timezone {
-    background-color: rgb(242, 244, 210);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 10px 0;
-    text-align: center;
 }
