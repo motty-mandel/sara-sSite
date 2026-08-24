@@ -123,6 +123,13 @@ async function getJoke() {
 getJoke();
 
 // ------------------------------------------------------------
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+    });
+}
+
 const timeZone = document.getElementById('timezone');
 
 const gibraltarTime = now.toLocaleTimeString("en-US", {

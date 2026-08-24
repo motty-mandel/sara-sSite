@@ -7,7 +7,7 @@
 
 body {
     background: url("./escheresque.png");
-    background-color: #00238c;
+    background-color: #3c002d;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -51,7 +51,7 @@ body {
     margin: 20px 10px 0;
     text-align: center;
     background: url("./45-degree-fabric-light.png");
-    background-color: #ffee00;
+    background-color: #00238c;
 }
 
 .joke {
@@ -61,7 +61,7 @@ body {
     margin: 20px 10px 0;
     text-align: center;
     background: url("./45-degree-fabric-light.png");
-    background-color: #ffee00;
+    background-color: #00238c;
 }
 
 .currency {
@@ -71,7 +71,7 @@ body {
     margin: 20px 10px 0;
     text-align: center;
     background: url("./45-degree-fabric-light.png");
-    background-color: #ffee00;
+    background-color: #00238c;
 }
 
 .timezone {
@@ -80,7 +80,7 @@ body {
     margin: 20px 10px 0;
     text-align: center;
     background: url("./45-degree-fabric-light.png");
-    background-color: #ffee00;
+    background-color: #00238c;
 }
 
 .goal-header {
