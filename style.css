@@ -6,7 +6,7 @@
 } */
 
 body {
-    background: url("./escheresque.png");
+    background: url("./images/stardust.png");
     background-color: #3c002d;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -50,7 +50,7 @@ body {
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
-    background: url("./45-degree-fabric-light.png");
+    background: url("./images/45-degree-fabric-light.png");
     background-color: #00238c;
 }
 
@@ -60,7 +60,7 @@ body {
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
-    background: url("./45-degree-fabric-light.png");
+    background: url("./images/45-degree-fabric-light.png");
     background-color: #00238c;
 }
 
@@ -70,7 +70,7 @@ body {
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
-    background: url("./45-degree-fabric-light.png");
+    background: url("./images/45-degree-fabric-light.png");
     background-color: #00238c;
 }
 
@@ -79,7 +79,7 @@ body {
     padding: 5px;
     margin: 20px 10px 0;
     text-align: center;
-    background: url("./45-degree-fabric-light.png");
+    background: url("./images/45-degree-fabric-light.png");
     background-color: #00238c;
 }
 
