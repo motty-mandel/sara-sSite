@@ -40,6 +40,7 @@ const imageSources = [
     "images/20260628_150043.jpg",
     "images/20260621_203749.jpg",
     "images/20260607_195005.jpg"
+    
 ];
 
 const imageIndex = dayNumber % imageSources.length;

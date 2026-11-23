@@ -6,8 +6,7 @@
 } */
 
 body {
-    background: url("./background-images/mountainView.png");
-    background-color: #3c002d;
+    background: url("./background-images/single-tulip.jpg");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -15,22 +14,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(213, 244, 225);
     border-radius: 10px;
+    background: rgb(79 110 255 / 50%);
+    border: solid 1px rgb(79 110 255);
 }
 
 .welcome-banner h1 {
     font-size: 2rem;
     margin: 0;
-    padding: 0 0 3px 0;
+    padding: 5px;
     text-align: center;
 }
 
 .image {
-    background-color: rgb(189, 192, 243);
+    background-color: rgb(189, 192, 243, 0.5);
+    border: solid 1px rgb(189, 192, 243);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0 0;
+    margin: 50px 20px 0;
 }
 
 .image img {
@@ -44,43 +45,13 @@ body {
     color: rgb(0, 0, 0, 0.7);
 }
 
-.weather {
-    background-color: rgb(242, 244, 210);
+.widgets div {
+    background: rgb(79 234 255 / 50%);
+    border: solid 1px rgb(79 234 255);
+    text-align: center;
     border-radius: 10px;
     padding: 5px;
     margin: 20px 10px 0;
-    text-align: center;
-    background: url("./background-images/45-degree-fabric-light.png");
-    background-color: #00238c;
-}
-
-.joke {
-    background-color: rgb(242, 244, 210);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 10px 0;
-    text-align: center;
-    background: url("./background-images/45-degree-fabric-light.png");
-    background-color: #00238c;
-}
-
-.currency {
-    background-color: rgb(242, 244, 210);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 10px 0;
-    text-align: center;
-    background: url("./background-images/45-degree-fabric-light.png");
-    background-color: #00238c;
-}
-
-.timezone {
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 10px 0;
-    text-align: center;
-    background: url("./background-images/45-degree-fabric-light.png");
-    background-color: #00238c;
 }
 
 .goal-header {
@@ -97,11 +68,10 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-    font-size: larger;
     margin: 0 0 20px 0;
     padding: 10px 20px;
-    border: none;
     border-radius: 10px;
-    background-color: rgb(244, 156, 156);
+    background: rgb(15 235 83 / 50%);
+    border: solid 1px rgb(21 255 17);
     color: black;
 }
