@@ -54,11 +54,6 @@ body {
     margin: 0 10px 10px;
 }
 
-.widgets div:nth-child(3),
-.widgets div:nth-child(4){
-    margin-bottom: 100px;
-}
-
 .goal-header {
     margin-bottom: 100px;
     width: 100%;
@@ -69,13 +64,10 @@ body {
 }
 
 .refresh {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    margin: 0 0 20px 0;
+    display: block;
+    margin: auto;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 10px;    
     background: rgb(15 235 83 / 50%);
     border: solid 1px rgb(21 255 17);
     color: black;
