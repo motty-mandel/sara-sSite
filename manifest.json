@@ -1,40 +1,43 @@
 {
     "short_name": "My Baby",
-    "name": "An app for my girfriend",
+    "name": "Sara's app",
     "icons": [
         {
-            "src": "background-images/mainIcon144-2.jpg",
-            "type": "image/jpeg",
-            "sizes": "144x144"
+            "src": "background-images/mainIcon144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
         },
         {
-            "src": "background-images/mainIcon192-2.jpg",
-            "type": "image/jpeg",
-            "sizes": "192x192"
+            "src": "background-images/mainIcon192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
         },
         {
-            "src": "background-images/mainIcon512-2.jpg",
-            "type": "image/jpeg",
-            "sizes": "512x512"
+            "src": "background-images/mainIcon512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
         }
     ],
-    "id": "/?source=pwa",
-    "start_url": "./index.html",
-    "scope": "./",
+    "id": "/sara-sSite/",
+    "start_url": "/sara-sSite/",
+    "scope": "/sara-sSite/",
     "background_color": "#3367D6",
-    "display": "fullscreen",
+    "display": "standalone",
     "theme_color": "#FFFFFF",
     "description": "An app for my girlfriend",
     "screenshots": [
         {
-            "src": "./background-images/screenshot1.png",
-            "type": "image/png",
+            "src": "./background-images/screenshot1.jpg",
+            "type": "image/jpg",
             "sizes": "401x822",
             "form_factor": "narrow"
         },
         {
-            "src": "./background-images/screenshot1.png",
-            "type": "image/png",
+            "src": "./background-images/screenshot-wide.jpg",
+            "type": "image/jpg",
             "sizes": "720x347",
             "form_factor": "wide"
         }
